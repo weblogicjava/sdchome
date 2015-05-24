@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>Form Elements - Ace Admin</title>
+
+		<meta name="description" content="Common form elements and layouts" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
+		<!-- ace styles -->
+		<link rel="stylesheet" href="../assets/css/ace.min.css" />
+
+
+	</head>
+
+	<body>
+
+		<div class="inline">
+											<input type="text" name="tags" id="form-field-tags" value="Tag Input Control" placeholder="Enter tags ..." />
+										</div>
+		<!-- basic scripts -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='../assets/js/jquery.min.js'>"+"<"+"/script>");
+		</script>
+
+		<script src="../assets/js/bootstrap.min.js"></script>
+		<script src="../assets/js/bootstrap-tag.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="../assets/js/ace-elements.min.js"></script>
+		<script src="../assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($) {
+				
+				
+				var tag_input = $('#form-field-tags');
+				try{
+					tag_input.tag(
+					  {
+						placeholder:tag_input.attr('placeholder'),
+						//enable typeahead by specifying the source array
+						source: ace.vars['US_STATES'],//defined in ace.js >> ace.enable_search_ahead
+						/**
+						//or fetch data from database, fetch those that match "query"
+						source: function(query, process) {
+						  $.ajax({url: 'remote_source.php?q='+encodeURIComponent(query)})
+						  .done(function(result_items){
+							process(result_items);
+						  });
+						}
+						*/
+					  }
+					);
+			
+					//programmatically add a new
+					var $tag_obj = $('#form-field-tags').data('tag');
+					$tag_obj.add('Programmatically Added');
+				}
+				catch(e) {
+					//display a textarea for old IE, because it doesn't support this plugin or another one I tried!
+					tag_input.after('<textarea id="'+tag_input.attr('id')+'" name="'+tag_input.attr('name')+'" rows="3">'+tag_input.val()+'</textarea>').remove();
+					//$('#form-field-tags').autosize({append: "\n"});
+				}
+				
+				
+			
+			});
+		</script>
+
+	</body>
+</html>

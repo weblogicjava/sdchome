@@ -1,0 +1,29 @@
+.TypeFrameTitle{
+	font-size:18px;
+	border-bottom: #6087AD 1px solid;
+}
+.TypeFrameFooter{
+	border-top: #6087AD 1px dashed;
+	postion:relative;
+}
+.TypeFrameContent{
+}
+.TypeCell{
+	border:1px solid red ;
+	width:100px;
+	height:130px;
+	float:left;
+	margin:3px;
+}
+.TypeCell img{
+	width:100px;
+	height:100px;
+}
+.TypeCellTitle{
+	align:Center
+	position:relative;
+	height:30px;
+	border:1px solid blue ;
+	line-height:30px;
+	text-align:center
+}

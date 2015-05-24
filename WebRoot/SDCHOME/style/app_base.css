@@ -1,0 +1,142 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+  background-color: #e4e6e9;
+  min-height: 100%;
+  padding-bottom: 0;
+  font-family: Comic Sans MS, Verdana, Arial, Vrinda, Tahoma;
+  font-size: 13px;
+  color: #393939;
+  line-height: 1.5;
+}
+
+a {
+	color: #939191;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.mainContent {
+	width: 960px;
+	margin-top: 3px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#top_cont {
+	width: 100%;
+	height: 30px;
+	border-bottom: #5D6C7B 1px solid;
+	background-color: #6087AD; 
+	font-family: Comic Sans MS, Verdana, Arial, Vrinda, Tahoma;
+	font-size: 12px;
+	line-height: 30px;
+	color: white;
+}
+#top_cont a{
+	color: white;
+	font-weight:bold
+}
+
+.clear {
+	border-top: 1px solid transparent !important;
+	margin-top: -1px !important;
+	border-top: 0;
+	margin-top: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#bottom_div_container{
+	margin-top:auto; height:100px;width:100%;text-align:center;	
+}
+
+#bottom_cont {
+	width: 100%;
+	border-top: #5D6C7B 1px solid;
+	background-color: #6087AD; 
+	font-family: Comic Sans MS, Verdana, Arial, Vrinda, Tahoma;
+	font-size: 12px;
+	margin-top: 2px;
+	color:white;
+}
+
+#bottom_cont a {
+	color:white;
+	font-weight:bold
+}
+
+.msgrouterdiv {
+	margin-top: 1px;
+	margin-bottom: 2px;
+	border: #DCDCDC 1px solid;
+	background-color: #F5F5F5;
+	padding-left: 50px;
+	padding-top: 5px;
+	line-height: 34px;
+}
+
+.msg_header {
+	color: #FE760D;
+	font-size: 24px;
+	border-bottom: #DCDCDC 1px dashed;
+}
+
+.msg_body {
+	padding-left: 20px;
+	line-height: 30px;
+}
+
+.msg_tail {
+	margin-top: 5px;
+	align: right;
+	text-align: right;
+	margin-right: 50px;
+	border-top: #DCDCDC 1px dashed;
+}
+
+.URLCUTE {
+	min-width: 100px;
+	height: 30px;
+	line-height: 30px;
+	border: #DCDCDC 1px dashed;
+	margin: 3px;
+	text-align: center;
+	float: left;
+}
+
+.divPanel{
+	border: #97A5B3 1px solid;
+	-moz-border-radius: 4px/*{cornerRadius}*/; 
+	-webkit-border-radius: 4px/*{cornerRadius}*/; 
+	-khtml-border-radius: 4px/*{cornerRadius}*/; 
+	border-radius: 4px/*{cornerRadius}*/;
+}
+
+.divPanelTitle{
+	background-color: #CAD8E5; 
+	border-bottom: #97A5B3 1px solid;
+	padding:3px;
+	min-height:24px;
+	line-height:24px;
+}
+.divPanelContent{
+	padding:5px;
+	min-height:300px;
+}
+.divPanelTail{
+	background-color: #CAD8E5; 
+	border-top: #97A5B3 1px solid;
+	padding:3px;
+	min-height:24px;
+	line-height:24px;
+}

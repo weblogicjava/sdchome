@@ -1,0 +1,19 @@
+.feed{
+	
+}
+.feed .feedAuthorTime{
+	border-bottom:0px dotted #CCCCCC;
+	width:300px;
+	color:#2679B5;
+}
+.feed .feedTitle{
+	
+}
+.feed .feedRemarks{
+	border:0px dotted blue;
+}
+.feed .feedCount{
+	width:300px;
+	float:left;
+	border:0px dotted blue;
+}

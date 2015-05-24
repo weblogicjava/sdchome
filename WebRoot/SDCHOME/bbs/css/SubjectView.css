@@ -1,0 +1,32 @@
+.commentItem{
+	padding-top:5px;
+	border-bottom:1px dotted #CCCCCC;
+}
+.commentItemH{
+	padding-top:5px;
+	float:left;
+	width:50px;
+}
+.commentItemC{
+	padding-top:5px;
+	float:left;
+	width:800px;
+	margin-left:5px;
+}
+.commentItemC2{
+	padding-top:5px;
+	float:left;
+	width:650px;
+	margin-left:5px;
+}
+.commentItemCT{
+	border-bottom:0px dotted #CCCCCC;
+	width:300px;
+	font-size:11px;
+	color:#2679B5;
+}
+.commentItemOP{
+	padding-top:5px;
+	float:right;
+	width:50px;
+}
